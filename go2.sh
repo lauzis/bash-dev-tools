@@ -6,6 +6,19 @@ if [ $# -eq 0 ]
 	exit 0;
 fi
 
-echo "Going to $1"
-cd $PROJECTDIR$1
-pwd
+if [ $# -eq 1 ]
+  then
+	echo "Going to $1"
+	cd $PROJECTDIR$1
+	pwd
+fi
+
+
+if [ $# -eq 2 ]
+  then
+	if [ "$2" == "n" ]	
+		then
+			echo "opening nautilus $1"
+			nautilus $PROJECTDIR$1
+	fi
+fi
