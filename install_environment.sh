@@ -21,14 +21,19 @@ echo -e "${GREEN}--------------- Installing NGINX / PHP / MYSQL ----------------
 echo -e "${NC}----------------------------------------------------------------"
 sudo apt-get -y install nginx php-fpm php-mysql mysql-server
 
+
+#Cli / Gui Tools
+echo -e "${NC}----------------------------------------------------------------"
+echo -e "${GREEN}---------------------- CLI / GUI TOOLS -------------------------"
+echo -e "${NC}----------------------------------------------------------------"
+# - workbench = gui tool for mysql
+# - mc = shell commander, easier to navigate trough dirs
+# - htop = a bit more grafical than usual top command
+sudo apt-get -y install mysql-workbench mc htop filezilla
+
 #wordress requirements
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}--------- Installing Wordress Required Extensions --------------" 
 echo -e "${NC}----------------------------------------------------------------"
 sudo apt-get -y install php-cli php-dev php-cgi php-xmlrpc php-curl php-gd php-imap php-mcrypt php-pspell
-
-
-
-
-
 
