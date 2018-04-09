@@ -31,7 +31,8 @@ echo -e "${NC}----------------------------------------------------------------"
 # - htop = a bit more grafical than usual top command
 # - filezilla = ftp client
 # - ssh = ssh server to remotly connect to the machine
-sudo apt-get -y install mysql-workbench mc htop filezilla git ssh
+# - curl = conecting/posting data from different protocols
+sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl
 
 #wordress requirements
 echo -e "${NC}----------------------------------------------------------------"
