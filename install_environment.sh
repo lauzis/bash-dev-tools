@@ -38,7 +38,10 @@ echo -e "${NC}----------------------------------------------------------------"
 # - workbench = gui tool for mysql
 # - mc = shell commander, easier to navigate trough dirs
 # - htop = a bit more grafical than usual top command
-sudo apt-get -y install mysql-workbench mc htop filezilla
+# - filezilla = ftp client
+# - ssh = ssh server to remotly connect to the machine
+# - curl = conecting/posting data from different protocols
+sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl
 
 
 #to do enable/disable
