@@ -26,7 +26,6 @@ if [ $# -eq 0 ]
 fi
 
 echo "Exporting database $1"
-#todo before dump check if db exists
-mysqldump -u $mysql_user -p"${mysql_password}" $1 > $DUMPDIR$1-$(date +%Y-%m-%d).sql
-#todo maybe dont overwrite dums, add counter at the end.
-echo "Database exported to" $DUMPDIR$1-$(date +%Y-%m-%d).sql
+mysql -u $mysql_user -p"${mysql_password}" -e "create database ${1};"
+#todo check if database created
+echo "Database created" 
