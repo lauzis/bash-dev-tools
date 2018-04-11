@@ -1,5 +1,6 @@
 # bash-dev-tools
-Some bash scripts, that helps automate some everyday tasks of php developer 
+Some bash scripts, that helps automate some everyday tasks of php developer.
+Kind of shortcuts for queries, commands that are used from time to time in the worklfow. 
 
 ## db shell tools
 Several tools with some simple scripts that are used quite often.
