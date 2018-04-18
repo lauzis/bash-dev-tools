@@ -9,7 +9,7 @@ fi
 if [ $# -eq 1 ]
   then
 	echo "Going to $1"
-	cd $PROJECTDIR$1
+	cd $PROJECTDIR$1"/wp/wp-content/themes/"$1
 	pwd
 fi
 
