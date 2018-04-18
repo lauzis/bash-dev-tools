@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECTDIR="/home/lauzis/www/DS/";
+PROJECTDIR="/home/lauzis/www/";
 if [ $# -eq 0 ]
   then
     echo "No arguments supplied"
