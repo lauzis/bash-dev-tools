@@ -41,7 +41,8 @@ echo -e "${NC}----------------------------------------------------------------"
 # - filezilla = ftp client
 # - ssh = ssh server to remotly connect to the machine
 # - curl = conecting/posting data from different protocols
-sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl
+# - poedit = for language po/mo file editing
+sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl poedit
 
 
 #to do enable/disable
