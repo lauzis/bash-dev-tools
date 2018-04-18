@@ -27,8 +27,8 @@ fi
 
 echo "Exporting database $1"
 #todo before dump check if db exists
-mysqldump -u $mysql_user -p"${mysql_password}" $1 > $DUMPDIR$1-$(date +%Y-%m-%d).sql
+mysqldump -u $mysql_user -p"${mysql_password}" $1 > $DUMPDIR$1-$(date +%Y-%m-%d__%H-%M-%S).sql
 mysqldump -u $mysql_user -p"${mysql_password}" $1 > $DUMPDIR$1-local-latest.sql
 #todo maybe dont overwrite dums, add counter at the end.
-echo "Database exported to" $DUMPDIR$1-$(date +%Y-%m-%d).sql
+echo "Database exported to" $DUMPDIR$1-$(date +%Y-%m-%d__%H-%M-%S).sql
 echo "Database exported to" $DUMPDIR$1-local-latest.sql
