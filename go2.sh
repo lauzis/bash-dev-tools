@@ -8,9 +8,17 @@ fi
 
 if [ $# -eq 1 ]
   then
-	echo "Going to $1"
-	cd $PROJECTDIR$1"/wp/wp-content/themes/"$1
-	pwd
+	if [ -d $PROJECTDIR$1"/wp/wp-content/themes/"$1 ]; then
+	 	# Control will enter here if $DIRECTORY exists.
+		echo "Going to $1"
+		cd $PROJECTDIR$1"/wp/wp-content/themes/"$1
+		pwd	
+	else
+		echo "Going to $1"
+		cd $PROJECTDIR$1
+		pwd	
+	fi
+	
 fi
 
 
