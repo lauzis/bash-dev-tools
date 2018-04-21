@@ -21,14 +21,14 @@ sudo apt-get -y upgrade
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}--------------- Installing NGINX / PHP / MYSQL -----------------" 
 echo -e "${NC}----------------------------------------------------------------"
-sudo apt-get -y install nginx php-fpm php-mysql mysql-server nodejs
+sudo apt-get -y install nginx php-fpm php-mysql mysql-server nodejs composer
 
 
 #wordress requirements
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}--------- Installing Wordress Required Extensions --------------" 
 echo -e "${NC}----------------------------------------------------------------"
-sudo apt-get -y install php-cli php-dev php-cgi php-xmlrpc php-curl php-gd php-imap php-mcrypt php-pspell
+sudo apt-get -y install php-cli php-dev php-cgi php-xmlrpc php-curl php-gd php-imap php-mcrypt php-pspell php-mbstring
 
 
 #Cli / Gui Tools
