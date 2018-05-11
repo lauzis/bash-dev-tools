@@ -14,7 +14,7 @@ then
 else
 	echo ERR:1 Settings file $SETTINGSFILE not found... sorry, can not continue...
 	exit
-fi	
+fi
 
 
 
@@ -25,7 +25,7 @@ if [ $# -eq 0 ]
 	exit 0;
 fi
 
-echo "Exporting database $1"
+echo "Creating database $1"
 mysql -u $mysql_user -p"${mysql_password}" -e "create database ${1};"
 #todo check if database created
-echo "Database created" 
+echo "Database created"
