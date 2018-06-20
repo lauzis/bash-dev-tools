@@ -50,7 +50,7 @@ echo -e "${NC}----------------------------------------------------------------"
 # - ssh = ssh server to remotly connect to the machine
 # - curl = conecting/posting data from different protocols
 # - poedit = for language po/mo file editing
-sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl poedit
+sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl poedit ssphass
 
 
 #to do enable/disable
@@ -63,6 +63,14 @@ sudo apt-get install -y nodejs
 #to do gulp/grunt
 sudo npm install -g gulp
 sudo snap install insomnia
+
+curl https://linux.avocode.com/avocode_pub.gpg | sudo apt-key add -
+sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list
+sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list.d/avocode.list
+
+sudo apt-get update
+sudo apt-get install avocode
+sudo apt-get upgrade
 
 
 
@@ -88,6 +96,4 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
 sudo apt-get update
 sudo apt-get install insomnia
 
-
-
-
+sudo apt-get autoremove
