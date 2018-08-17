@@ -29,9 +29,9 @@ echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}--------- Installing Wordress / Drupal Required Extensions --------------" 
 echo -e "${NC}----------------------------------------------------------------"
 sudo apt-get -y install php-fpm php-mysql php-cli php-dev php-cgi php-xmlrpc php-curl php-gd php-imap php-mcrypt php-pspell php-mbstring php-xml
-sudo apt-get -y install php7.2-fpm php7.2-mysql php7.2-cli php7.2-dev php7.2-cgi php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imap php7.2-mcrypt php7.2-pspell php7.2-mbstring php7.2-xml
-sudo apt-get -y install php7.1-fpm php7.1-mysql php7.1-cli php7.1-dev php7.1-cgi php7.1-xmlrpc php7.1-curl php7.1-gd php7.1-imap php7.1-mcrypt php7.1-pspell php7.1-mbstring php7.1-xml
-sudo apt-get -y install php5.6-fpm php5.6-mysql php5.6-cli php5.6-dev php5.6-cgi php5.6-xmlrpc php5.6-curl php5.6-gd php5.6-imap php5.6-mcrypt php5.6-pspell php5.6-mbstring php5.6-xml
+sudo apt-get -y install php7.2-fpm php7.2-zip php7.2-mysql php7.2-cli php7.2-dev php7.2-cgi php7.2-xmlrpc php7.2-curl php7.2-gd php7.2-imap php7.2-mcrypt php7.2-pspell php7.2-mbstring php7.2-xml
+sudo apt-get -y install php7.1-fpm php7.1-zip php7.1-mysql php7.1-cli php7.1-dev php7.1-cgi php7.1-xmlrpc php7.1-curl php7.1-gd php7.1-imap php7.1-mcrypt php7.1-pspell php7.1-mbstring php7.1-xml
+sudo apt-get -y install php5.6-fpm php5.6-zip php5.6-mysql php5.6-cli php5.6-dev php5.6-cgi php5.6-xmlrpc php5.6-curl php5.6-gd php5.6-imap php5.6-mcrypt php5.6-pspell php5.6-mbstring php5.6-xml
 
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}----------------------- Drupal stack ---------------------------" 
