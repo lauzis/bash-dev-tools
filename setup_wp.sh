@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+#TODO check params before doing something....
+#TODO check why cant create db with dash
 GREEN='\033[0;32m'
 NC='\033[0m'
 
@@ -36,9 +39,14 @@ else
 fi
 
 echo "----Copy nginx script----"
-cp /home/lauzis/nginx/sites-aviable/wp.conf /home/lauzis/nginx/sites-aviable/$1.conf
-ln -s /home/lauzis/nginx/sites-aviable/$1.conf /home/lauzis/nginx/sites-enabled/
-sed -i "s/\[project_name\]/$1/g" /home/lauzis/nginx/sites-aviable/$1.conf
+
+#TODO check if files exist
+cp /home/lauzis/nginx/sites-available/wp.conf /home/lauzis/nginx/sites-available/$1.conf
+#TODO check if files exist before link
+ln -s /home/lauzis/nginx/sites-available/$1.conf /home/lauzis/nginx/sites-enabled/
+sed -i "s/\[project_name\]/$1/g" /home/lauzis/nginx/sites-available/$1.conf
+#TODO log folder create if needed
+
 echo "----replace in conifig----"
 
 echo "-----------------Creating database----------------"

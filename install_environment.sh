@@ -33,11 +33,11 @@ sudo apt-get -y install php7.2-fpm php7.2-zip php7.2-mysql php7.2-cli php7.2-dev
 sudo apt-get -y install php7.1-fpm php7.1-zip php7.1-mysql php7.1-cli php7.1-dev php7.1-cgi php7.1-xmlrpc php7.1-curl php7.1-gd php7.1-imap php7.1-mcrypt php7.1-pspell php7.1-mbstring php7.1-xml
 sudo apt-get -y install php5.6-fpm php5.6-zip php5.6-mysql php5.6-cli php5.6-dev php5.6-cgi php5.6-xmlrpc php5.6-curl php5.6-gd php5.6-imap php5.6-mcrypt php5.6-pspell php5.6-mbstring php5.6-xml
 
-echo -e "${NC}----------------------------------------------------------------"
-echo -e "${GREEN}----------------------- Drupal stack ---------------------------" 
-echo -e "${NC}----------------------------------------------------------------"
-composer global require drush/drush:dev-master
-composer global update
+#echo -e "${NC}----------------------------------------------------------------"
+#echo -e "${GREEN}----------------------- Drupal stack ---------------------------"
+#echo -e "${NC}----------------------------------------------------------------"
+#composer global require drush/drush:dev-master
+#composer global update
 
 #Cli / Gui Tools
 echo -e "${NC}----------------------------------------------------------------"
@@ -58,20 +58,22 @@ sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl poedit ss
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}---------------------- Frontend related --------------------------"
 echo -e "${NC}----------------------------------------------------------------"
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt-get install npm
+#TODO check what is lates stable version
+#curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+#sudo apt-get install -y nodejs
 #to do gulp/grunt
 sudo npm install -g gulp
 sudo snap install insomnia
 
-curl https://linux.avocode.com/avocode_pub.gpg | sudo apt-key add -
-sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list
-sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list.d/avocode.list
+##TODO check if its not there before adding
+#curl https://linux.avocode.com/avocode_pub.gpg | sudo apt-key add -
+#sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list
+#sudo echo deb http://linux.avocode.com/apt all main >> /etc/apt/sources.list.d/avocode.list
 
 sudo apt-get update
 sudo apt-get install avocode
 sudo apt-get upgrade
-
 
 
 echo -e "${NC}----------------------------------------------------------------"
@@ -84,13 +86,14 @@ sudo apt-get install vlc gimp
 echo -e "${NC}----------------------------------------------------------------"
 echo -e "${GREEN}---------------------- Debuging tools ----------------------------"
 echo -e "${NC}----------------------------------------------------------------"
-# Add to sources
-echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
-    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
-
-# Add public key used to verify code signature
-wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
-    | sudo apt-key add -
+#TODO check if its not there before adding
+## Add to sources
+#echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+#    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+#
+## Add public key used to verify code signature
+#wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+#    | sudo apt-key add -
 
 # Refresh repository sources and install Insomnia
 sudo apt-get update
