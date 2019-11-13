@@ -18,9 +18,9 @@ sudo apt-get -y upgrade
 
 
 #basic services
-echo -e "${NC}----------------------------------------------------------------"
-echo -e "${GREEN}--------------- Installing NGINX / MYSQL -----------------" 
-echo -e "${NC}----------------------------------------------------------------"
+echo -e "${NC}------------------------------------------------------------------------------"
+echo -e "${GREEN}--------------- Installing NGINX / MYSQL / Node / Composer-----------------"
+echo -e "${NC}------------------------------------------------------------------------------"
 sudo apt-get -y install nginx mysql-server nodejs composer
 
 
@@ -50,7 +50,9 @@ echo -e "${NC}----------------------------------------------------------------"
 # - ssh = ssh server to remotly connect to the machine
 # - curl = conecting/posting data from different protocols
 # - poedit = for language po/mo file editing
+# - phpstorm = php ide
 sudo apt-get -y install mysql-workbench mc htop filezilla git ssh curl poedit ssphass
+sudo snap install phpstorm
 
 
 #to do enable/disable
@@ -96,7 +98,7 @@ echo -e "${NC}----------------------------------------------------------------"
 #    | sudo apt-key add -
 
 # Refresh repository sources and install Insomnia
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get install insomnia
 
 sudo apt-get autoremove
